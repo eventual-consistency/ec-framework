@@ -1,18 +1,18 @@
 $VersionRegex 		= "\d+\.\d+\.\d+\.\d+"
-Write-Verbose "BUILD_BUILDNUMBER: $Env:BUILD_BUILDNUMBER"
+Write-Verbose "BUILD_BUILDNUMBER: $Env:GO_PIPELINE_LABEL"
 # Get and validate the version data
-$VersionData = [regex]::matches($Env:BUILD_BUILDNUMBER,$VersionRegex)
+$VersionData = [regex]::matches($Env:GO_PIPELINE_LABEL,$VersionRegex)
 switch($VersionData.Count)
 {
    0        
       { 
-         Write-Error "Could not find version number data in BUILD_BUILDNUMBER."
+         Write-Error "Could not find version number data in GO_PIPELINE_LABEL."
          exit 1
       }
    1 {}
    default 
       { 
-         Write-Warning "Found more than instance of version data in BUILD_BUILDNUMBER." 
+         Write-Warning "Found more than instance of version data in GO_PIPELINE_LABEL." 
          Write-Warning "Will assume first instance is version."
       }
 }
