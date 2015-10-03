@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Framework.Testing</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      EventualConsistency support classes for unit testing, including support for additional
+      test assertions and helper functions.
+    </description>
+    <dependencies>
+      <dependency id="EventualConsistency.Framework" version="_SOLUTIONVERSION_"  />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Framework.Testing.dll" target="lib\net45" />
+  </files>
+</package>

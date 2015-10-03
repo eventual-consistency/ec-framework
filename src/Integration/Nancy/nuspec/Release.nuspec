@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Integration.Nancy</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      EventualConsistency integration support for Nancy framework, including type resolution.
+    </description>
+    <dependencies>
+      <dependency id="EventualConsistency.Framework"  version="_SOLUTIONVERSION_" />
+      <dependency id="EventualConsistency.Framework.Infrastructure"  version="_SOLUTIONVERSION_" />
+      <dependency id="Nancy" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Integration.Nancy.dll" target="lib\net45" />
+  </files>
+</package>

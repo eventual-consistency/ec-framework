@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Framework</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Core library for the EventualConsistency framework, containing interfaces and
+      common types that are provider/implementation agnostic.
+    </description>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Framework.dll" target="lib\net45" />
+  </files>
+</package>

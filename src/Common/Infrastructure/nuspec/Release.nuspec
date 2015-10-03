@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Framework.Infrastructure</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Base infrastructure library for EventualConsistency. Contains common classes
+      to be used for building models or providers.
+    </description>
+    <dependencies>
+      <dependency id="EventualConsistency.Framework" version="_SOLUTIONVERSION_" />
+      <dependency id="Polygamy" version="0.1.15276.02" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Framework.Infrastructure.dll" target="lib\net45" />
+  </files>
+</package>

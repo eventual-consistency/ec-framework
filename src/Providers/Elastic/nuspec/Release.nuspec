@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Providers.InProcess</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      EventualConsistency Provider for in-process/simple scenarious. This includes file based and
+      memory only storage, a temporary repository that's geared towards unit testing.
+    </description>
+    <dependencies>
+      <dependency id="Elasticsearch.Net" />
+      <dependency id="EventualConsistency.Framework" version="_SOLUTIONVERSION_"  />
+      <dependency id="EventualConsistency.Framework.Infrastructure" version="_SOLUTIONVERSION_"  />
+      <dependency id="Newtonsoft.Json" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Providers.Elastic.dll" target="lib\net45" />
+  </files>
+</package>

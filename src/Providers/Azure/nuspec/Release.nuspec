@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EventualConsistency.Providers.Azure</id>
+    <version>1.0</version>
+    <authors>EventualConsistency.net</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      EventualConsistency Provider for Microsoft Azure services, including CloudTable storage
+      for event sourcing and Windows Service Bus support for event distribution.
+    </description>
+    <dependencies>
+      <dependency id="EventualConsistency.Framework" version="_SOLUTIONVERSION_"  />
+      <dependency id="EventualConsistency.Framework.Infrastructure" version="_SOLUTIONVERSION_"  />
+      <dependency id="Polygamy" version="0.1.15276.02" />
+
+      <dependency id="WindowsAzure.ServiceBus" />
+      <dependency id="WindowsAzure.Storage" />
+
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\EventualConsistency.Providers.Azure.dll" target="lib\net45" />
+  </files>
+</package>
