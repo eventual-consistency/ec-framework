@@ -65,8 +65,8 @@
       <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Polygamy, Version=2015.9.27.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Polygamy.2015.9.27.3\lib\net45\Polygamy.dll</HintPath>
+    <Reference Include="Polygamy, Version=0.1.15276.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Polygamy.0.1.15276.02\lib\net45\Polygamy.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

@@ -38,8 +38,8 @@
       <HintPath>..\..\..\packages\NetMQ.3.3.2.1\lib\net40\NetMQ.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Polygamy, Version=2015.9.27.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Polygamy.2015.9.27.3\lib\net45\Polygamy.dll</HintPath>
+    <Reference Include="Polygamy, Version=0.1.15276.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Polygamy.0.1.15276.02\lib\net45\Polygamy.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=1.0.316.0, Culture=neutral, processorArchitecture=MSIL">
