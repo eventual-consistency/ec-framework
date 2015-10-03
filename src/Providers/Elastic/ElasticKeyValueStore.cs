@@ -73,7 +73,7 @@ namespace EventualConsistency.Providers.Elastic
 
             var jsonData = JsonConvert.SerializeObject(item);
 
-            var response = Client.Index(IndexName, typeof (TResultType).FullName, jsonData, null);
+            var response = Client.Index(IndexName, typeof (TResultType).FullName, itemKey, jsonData, null);
 
             return response.Success;
         }
