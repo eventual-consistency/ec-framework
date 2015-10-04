@@ -25,7 +25,7 @@ $nugetPath 		= $scriptDir + "\nuget.exe"
 $nugetUri		= "http://eventualconsistency-nuget.trafficmanager.net/nuget/packages";
 
 $scanDirectory 		= $scriptDir + "\..\src\";
-$outputDirectory 	= $scriptDir + "\..\bld\";
+$outputDirectory 	= "bld";
 Write-Host $scanDirectory 
 
 Write-Host "Packing projects for solution."
