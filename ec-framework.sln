@@ -31,6 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventualConsistency.Provide
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bld", "bld", "{397EFFA7-F6A1-4FBB-8953-CAEBAAC1B986}"
 	ProjectSection(SolutionItems) = preProject
+		bld\ApplyVersionToAssemblies.ps1 = bld\ApplyVersionToAssemblies.ps1
 		bld\NuGet.exe = bld\NuGet.exe
 		bld\PerformPackaging.ps1 = bld\PerformPackaging.ps1
 		bld\PerformPush.ps1 = bld\PerformPush.ps1
