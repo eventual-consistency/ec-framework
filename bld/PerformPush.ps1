@@ -1,8 +1,7 @@
-param
-(
-	[string]$apiUrl,
-	[string]$apiKey
-)
+if(-not ($Env:NugetKey)) {
+	Write-Host "Please set NugetKey environment variable to use this script"
+	exit 1;
+}
 
 $scriptPath 		= $MyInvocation.MyCommand.Path
 $scriptDir 			= Split-Path -Parent $scriptPath
@@ -16,11 +15,6 @@ $nupacks = Get-ChildItem -Recurse -Path $outputDirectory -Filter *.nupkg
 foreach ($pack in $nupacks)
 {
 	Write-Host "   Pushing nupkg file:" + $pack.FullName
-	if ($apiUrl -eq "default") {
-		& $nugetPath push $pack.FullName -ApiKey $apiKey 
-	} else {
-		
-		& $nugetPath push $pack.FullName -ApiKey $apiKey -Source $apiUrl
-	}
+	& $nugetPath push $pack.FullName -ApiKey $Env:NugetKey 
 }
 
