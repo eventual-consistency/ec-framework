@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,18 +35,6 @@
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EasyNetQ, Version=0.50.8.400, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\EasyNetQ.0.50.8.400\lib\net40\EasyNetQ.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Polygamy, Version=0.1.15276.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Polygamy.0.1.15276.02\lib\net45\Polygamy.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="RabbitMQ.Client, Version=3.5.4.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\RabbitMQ.Client.3.5.4\lib\net40\RabbitMQ.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +43,15 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Polygamy">
+      <HintPath>..\..\..\packages\Polygamy.0.1.15304.01\lib\net45\Polygamy.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\..\packages\RabbitMQ.Client.3.5.6\lib\net40\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyNetQ">
+      <HintPath>..\..\..\packages\EasyNetQ.0.50.12.407\lib\net40\EasyNetQ.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,11 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Framework\EventualConsistency.Framework.csproj">
-      <Project>{fb5c4c97-2f3c-41ff-ba8a-27843d13d15d}</Project>
+      <Project>{FB5C4C97-2F3C-41FF-BA8A-27843D13D15D}</Project>
       <Name>EventualConsistency.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Common\Infrastructure\EventualConsistency.Framework.Infrastructure.csproj">
-      <Project>{a105a1d4-fb1b-4170-ab0a-519611ac3032}</Project>
+      <Project>{A105A1D4-FB1B-4170-AB0A-519611AC3032}</Project>
       <Name>EventualConsistency.Framework.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
