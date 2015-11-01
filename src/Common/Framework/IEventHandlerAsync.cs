@@ -6,7 +6,7 @@ namespace EventualConsistency.Framework
     ///     Asychronous event handler
     /// </summary>
     /// <typeparam name="TEventType">Event Type</typeparam>
-    public interface IEventHandlerAsync<TEventType>
+	public interface IEventHandlerAsync<TEventType>  : IEventHandler
         where TEventType : IEvent
     {
         /// <summary>
